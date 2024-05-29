@@ -1,0 +1,22 @@
+<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+            <th class="px-6 py-3">DNI</th>
+            <th class="px-6 py-3">Estudiante</th>
+            <th class="px-6 py-3">Módulo 1</th>
+            <th class="px-6 py-3">Módulo 2</th>
+            <th class="px-6 py-3">Carrera</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(student of data; track student.dni){
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <td class="px-6 py-4 dark:text-white">{{student.dni}}</td>
+            <td class="px-6 py-4 dark:text-white">{{student.name}}</td>
+            <td class="px-6 py-4 dark:text-white">{{student.module1}}</td>
+            <td class="px-6 py-4 dark:text-white">{{student.module2}}</td>
+            <td class="px-6 py-4 dark:text-white">{{student.technicalCareer}}</td>
+        </tr>
+        }
+    </tbody>
+</table>
